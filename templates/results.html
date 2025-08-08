@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ergebnisse</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <h1>Ergebnisse für "{{ query }}"</h1>
+  <ul class="results">
+    {% for r in results %}
+      <li>
+        <a href="{{ r.link }}" target="_blank">{{ r.name }}</a>
+        <p>{{ r.summary }}</p>
+        <ul class="info">
+          <li><strong>Team:</strong> {{ r.team }}</li>
+          <li><strong>Standort:</strong> {{ r.location }}</li>
+          <li><strong>Finanzierung:</strong> {{ r.financing }}</li>
+        </ul>
+      </li>
+    {% else %}
+      <li>Keine Ergebnisse.</li>
+    {% endfor %}
+  </ul>
+  <p><a href="/">Neue Suche</a></p>
+</body>
+</html>
