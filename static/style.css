@@ -1,0 +1,47 @@
+body {
+  background: #fff;
+  color: #333;
+  font-family: sans-serif;
+  margin: 2rem;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  background: #f5f5f5;
+  color: #333;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  background: #e0e0e0;
+  color: #333;
+}
+
+.results {
+  list-style: none;
+  padding: 0;
+}
+
+.results li {
+  margin-bottom: 1.5rem;
+  background: #f9f9f9;
+  padding: 1rem;
+  border: 1px solid #ddd;
+}
+
+.results a {
+  color: #000;
+  text-decoration: none;
+}
+
+.results .info {
+  list-style: none;
+  padding-left: 0;
+}
+
+.results .info li {
+  margin: 0.2rem 0;
+}
